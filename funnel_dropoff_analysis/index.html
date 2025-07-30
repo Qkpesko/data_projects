@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pelumi – Data & Business Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #e3fdfd;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 1rem 0;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .skills {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .skills span {
+      background-color: #fcd5ce;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .project {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .project img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+  </nav>
+
+  <section>
+    <h1>Hi! I’m Pelumi – Data & Business Analyst</h1>
+    <div class="card" id="about">
+      <p>
+        Hi, I'm Pelumi. A Data Analyst with 6+ years of experience in fintech and crypto.
+        I turn operational chaos into streamlined systems and raw data into insights that drive smarter decisions.
+      </p>
+      <p>
+        At Quidax, I analyze fiat transaction data, detect fraud trends, build dashboards, and ensure our payment flows run like clockwork.
+        My tools of choice: SQL, Looker Studio, Tableau, Excel, and Python.
+      </p>
+      <ul>
+        <li>Analyze transactions to spot risks before they hurt revenue</li>
+        <li>Create dashboards that execs actually read</li>
+        <li>Work with product/engineering to fix bugs before users ever notice</li>
+        <li>Make operational data accessible and useful</li>
+      </ul>
+      <p>
+        I’m now exploring remote Data Analyst opportunities where I can use data to solve real problems, fast.
+      </p>
+      <div class="skills">
+        <span>SQL</span><span>Python</span><span>Excel</span><span>Looker</span><span>Tableau</span>
+        <span>Power BI</span><span>BigQuery</span><span>Git</span><span>Airtable</span><span>Jupyter</span>
+      </div>
+    </div>
+
+    <div class="card" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="project">
+        <img src="https://qkpesko.github.io/data_projects/funnel_dropoff_analysis/funnel_chart.png" alt="Funnel Chart">
+        <div>
+          <h3>User Funnel with Drop-Off %</h3>
+          <p>
+            Analyzed conversion rates across key customer stages to identify where the largest user drop-offs occurred.
+            Explored reasons for churn using timestamps and country-level segmentation. Delivered recommendations in a business impact report.
+          </p>
+          <p><strong>Tools:</strong> Python, Excel, BigQuery</p>
+          <a href="https://qkpesko.github.io/data_projects/funnel_dropoff_analysis/Final%20Report_%20Customer%20Funnel%20Drop-Off%20Analysis%20for%20a%20Digital%20Finance%20App.pdf" target="_blank">📄 View Report</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    Built with ❤️ by Pelumi | Hosted on GitHub Pages
+  </div>
+</body>
+</html>
