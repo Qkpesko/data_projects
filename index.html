@@ -2,74 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pelumi – Data Projects</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #0e0e10;
-      color: #f5f5f5;
-      line-height: 1.6;
+      box-sizing: border-box;
     }
-
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
     header {
       background: linear-gradient(90deg, #38b6ff, #8e44ad);
       padding: 3rem 1rem;
       text-align: center;
+      color: white;
     }
-
     header h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
-
     header p {
       font-size: 1.1rem;
       opacity: 0.9;
     }
-
-    main {
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      color: #8e44ad;
+    }
+    section {
       max-width: 900px;
       margin: 3rem auto;
       padding: 0 1rem;
+      display: none;
+      animation: fadeIn 0.6s ease forwards;
     }
-
+    section.active {
+      display: block;
+    }
     .project {
-      background-color: #1c1c1f;
+      background-color: #fff;
       border-radius: 12px;
       padding: 1.5rem;
       margin-bottom: 2rem;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       transition: transform 0.2s ease-in-out;
     }
-
     .project:hover {
       transform: translateY(-4px);
     }
-
     .project h2 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
-
     .project a {
-      color: #38b6ff;
+      color: #8e44ad;
       text-decoration: none;
     }
-
     .project p {
-      color: #ccc;
       font-size: 0.95rem;
     }
-
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .about-container img {
+      width: 180px;
+      height: 180px;
+      border-radius: 100px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-box {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(56, 182, 255, 0.15);
+    }
+    .contact-box p {
+      font-size: 1rem;
+      margin: 0.75rem 0;
+    }
+    .contact-box a {
+      color: #8e44ad;
+      text-decoration: none;
+    }
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+    .contact-icon {
+      margin-right: 8px;
+      color: #38b6ff;
+    }
     footer {
       text-align: center;
       padding: 2rem;
       color: #666;
       font-size: 0.85rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -79,9 +136,70 @@
     <p>Turning complex data into clear, business-ready insights</p>
   </header>
 
-  <main>
+  <nav>
+    <a href="#" class="tab-link" data-tab="about">About Me</a>
+    <a href="#" class="tab-link active" data-tab="projects">Projects</a>
+    <a href="#" class="tab-link" data-tab="contact">Contact</a>
+  </nav>
+
+  <section id="about" class="tab-section">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="./images/pelumi-profile.jpg" alt="Pelumi Okunola">
+    <div>
+      <div class="bio-block" style="margin-bottom: 2rem;">
+        <p>Hi, I'm Pelumi Okunola — a data & business analyst with 6+ years of experience working in fintech, payments, and operations. I currently lead the Fiat Team at Quidax, where I oversee ₦10B+ in weekly transaction volumes across three core fiat products.</p>
+      </div>
+
+      <div class="bio-block" style="margin-bottom: 2rem;">
+        <p>I started my career in banking, transitioned into crypto during the Nigerian ban, and helped Quidax build its peer-to-peer fiat infrastructure from scratch. I’ve since grown the team to 7 people and built operational systems that are both resilient and scalable.</p>
+      </div>
+
+      <div class="bio-block" style="margin-bottom: 2rem;">
+        <p>As someone obsessed with clarity, my tools of choice are SQL, Python, Excel, and Looker Studio. I’ve used them to identify fraud patterns, reduce drop-offs in user funnels, build dashboards executives actually use, and lead projects like our expansion into Ghana.</p>
+      </div>
+
+      <div class="bio-block" style="margin-bottom: 2rem;">
+        <p>I’m currently studying for an MSc in Artificial Intelligence & Data Science at the University of Hull to deepen my statistical and machine learning skills. My next step? A career that blends data, operations, and strategy — ideally in a place that moves fast and thinks smart.</p>
+      </div>
+
+      <div class="bio-block" style="margin-bottom: 2rem;">
+        <p>Outside work, I’m a forex trader, reader, and someone committed to spiritual and personal growth. I’m rebuilding consistency across all areas of life, and learning something new every week — just to stay curious and whole.</p>
+      </div>
+
+      <div class="bio-block">
+        <p><strong>Skills:</strong> SQL · Python · Tableau · Looker Studio · Excel · Operational Strategy · Funnel Analysis · Risk & Fraud Analytics</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section style="margin-bottom: 2rem;">
+        <p>I started my career in banking, transitioned into crypto during the Nigerian ban, and helped Quidax build its peer-to-peer fiat infrastructure from scratch. I’ve since grown the team to 7 people and built operational systems that are both resilient and scalable.</p>
+      </section>
+
+      <section style="margin-bottom: 2rem;">
+        <p>As someone obsessed with clarity, my tools of choice are SQL, Python, Excel, and Looker Studio. I’ve used them to identify fraud patterns, reduce drop-offs in user funnels, build dashboards executives actually use, and lead projects like our expansion into Ghana.</p>
+      </section>
+
+      <section style="margin-bottom: 2rem;">
+        <p>I’m currently studying for an MSc in Artificial Intelligence & Data Science at the University of Hull to deepen my statistical and machine learning skills. My next step? A career that blends data, operations, and strategy — ideally in a place that moves fast and thinks smart.</p>
+      </section>
+
+      <section style="margin-bottom: 2rem;">
+        <p>Outside work, I’m a forex trader, reader, and someone committed to spiritual and personal growth. I’m rebuilding consistency across all areas of life, and learning something new every week — just to stay curious and whole.</p>
+      </section>
+
+      <section>
+        <p><strong>Skills:</strong> SQL · Python · Tableau · Looker Studio · Excel · Operational Strategy · Funnel Analysis · Risk & Fraud Analytics</p>
+      </section>
+    </div>
+  </div>
+</section>
+
+  <section id="projects" class="tab-section active">
     <div class="project">
-      <h2><a href="./funnel_dropoff_analysis/">Customer Funnel Drop-Off Analysis →</a></h2>
+      <h2><a href="./funnel_dropoff_analysis/">Project 1: Customer Funnel Drop-Off Analysis →</a></h2>
       <p>Analyzed onboarding funnel for a digital finance app. Found a 37% drop after KYC, highlighted high-churn segments, and proposed retention nudges. Includes notebook and report.</p>
     </div>
 
@@ -94,10 +212,36 @@
       <h2><a href="#">Project 3: Growth Funnel Dashboard (Coming Soon)</a></h2>
       <p>SQL + Looker dashboard to track user acquisition, activation, and retention across product channels.</p>
     </div>
-  </main>
+  </section>
+
+  <section id="contact" class="tab-section">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+      <p><i class="fas fa-envelope contact-icon"></i>Email: <a href="mailto:pelumi.okunola7@gmail.com">pelumi.okunola7@gmail.com</a></p>
+      <p><i class="fab fa-linkedin contact-icon"></i>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p><i class="fab fa-github contact-icon"></i>GitHub: <a href="https://github.com/Qkpesko" target="_blank">github.com/Qkpesko</a></p>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Pelumi Okunola · Built with HTML & GitHub Pages
+    &copy; 2025 Pelumi Okunola – Built with HTML & GitHub Pages
   </footer>
+
+  <script>
+    const links = document.querySelectorAll('.tab-link');
+    const sections = document.querySelectorAll('.tab-section');
+
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        links.forEach(l => l.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+
+        link.classList.add('active');
+        const section = document.getElementById(link.dataset.tab);
+        section.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
