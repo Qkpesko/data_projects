@@ -1,160 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pelumi – Data & Business Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Pelumi – Data Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #38b6ff, #8e44ad);
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    nav {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      font-weight: 600;
-    }
-    section {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .about {
-      margin-bottom: 3rem;
-    }
-    .about h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .about p {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .skills span {
-      background-color: #e0e0e0;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    .portfolio h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      padding: 1.5rem;
-    }
-    .card h3 {
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-      color: #222;
-    }
-    .card p {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 1rem;
-    }
-    .card a {
-      text-decoration: none;
-      background-color: #38b6ff;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 0.9rem;
-    }
-    footer {
-      text-align: center;
+      margin: 0;
       padding: 2rem;
-      background-color: #fafafa;
-      font-size: 0.85rem;
-      color: #777;
+      background: #121212;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #38b6ff;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #8e44ad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <h1>Pelumi – Data & Business Analyst</h1>
+  <p>Welcome to my data project portfolio. I use SQL, Python, and business thinking to turn operational chaos into strategic clarity.</p>
 
-  <header>
-    <h1>Hi, I’m Pelumi</h1>
-    <p>I turn Fintech chaos into clean, actionable data.</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-  </nav>
-
-  <section class="about" id="about">
-  <h2>About Me</h2>
-  <p>
-    I'm Pelumi, a Data Analyst with over six years of experience driving data-informed decisions in the fintech and crypto sectors. I specialize in transforming messy operational data into clean, actionable insights that streamline processes and improve performance.
-  </p>
-  <p>
-    At Quidax, I lead data efforts across fiat operations — analyzing transaction flows, detecting fraud trends, and building dashboards that enable fast, informed decisions. My work supports multi-billion naira transaction volumes weekly, and spans both internal analytics and product-facing insights.
-  </p>
-  <p>
-    I'm currently exploring remote Data Analyst opportunities where I can contribute to high-impact teams and use data to solve real-world problems at scale.
-  </p>
-  <div class="skills">
-    <span>SQL</span><span>Python</span><span>Excel</span><span>Looker</span><span>Tableau</span>
-    <span>Power BI</span><span>BigQuery</span><span>Git</span>
+  <div class="project">
+    <h2><a href="./funnel_dropoff_analysis/">Customer Funnel Drop-Off Analysis</a></h2>
+    <p>Analyzed where users drop off between KYC and first deposit. Identified key friction points, high-churn segments, and recommended behavioral nudges. Includes notebook and PDF report.</p>
   </div>
-</section>
 
-
-  <section class="portfolio" id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Customer Funnel Drop-Off Analysis</h3>
-        <p>Analyzed user drop-off across KYC to deposit stages using timestamps and funnel segmentation. Delivered clear business recommendations.</p>
-        <a href="https://qkpesko.github.io/data_projects/funnel_dropoff_analysis/Final%20Report_%20Customer%20Funnel%20Drop-Off%20Analysis%20for%20a%20Digital%20Finance%20App.pdf" target="_blank">View Report</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    Built by Pelumi | Hosted on GitHub Pages
-  </footer>
-
+  <p>More projects coming soon: Payment Fraud · Growth Dashboard · Churn Modeling</p>
 </body>
 </html>
