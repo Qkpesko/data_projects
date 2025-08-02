@@ -9,40 +9,95 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 2rem;
-      background: #121212;
-      color: #fff;
+      padding: 0;
+      background-color: #0e0e10;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #38b6ff;
+
+    header {
+      background: linear-gradient(90deg, #38b6ff, #8e44ad);
+      padding: 3rem 1rem;
+      text-align: center;
     }
-    p {
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
       font-size: 1.1rem;
-      margin-bottom: 2rem;
-      color: #ccc;
+      opacity: 0.9;
     }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
     .project {
+      background-color: #1c1c1f;
+      border-radius: 12px;
+      padding: 1.5rem;
       margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s ease-in-out;
     }
-    a {
-      color: #8e44ad;
+
+    .project:hover {
+      transform: translateY(-4px);
+    }
+
+    .project h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project a {
+      color: #38b6ff;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .project p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
-  <h1>Pelumi – Data & Business Analyst</h1>
-  <p>Welcome to my data project portfolio. I use SQL, Python, and business thinking to turn operational chaos into strategic clarity.</p>
+  <header>
+    <h1>Pelumi – Data & Business Analyst</h1>
+    <p>Turning complex data into clear, business-ready insights</p>
+  </header>
 
-  <div class="project">
-    <h2><a href="./funnel_dropoff_analysis/">Customer Funnel Drop-Off Analysis</a></h2>
-    <p>Analyzed where users drop off between KYC and first deposit. Identified key friction points, high-churn segments, and recommended behavioral nudges. Includes notebook and PDF report.</p>
-  </div>
+  <main>
+    <div class="project">
+      <h2><a href="./funnel_dropoff_analysis/">Customer Funnel Drop-Off Analysis →</a></h2>
+      <p>Analyzed onboarding funnel for a digital finance app. Found a 37% drop after KYC, highlighted high-churn segments, and proposed retention nudges. Includes notebook and report.</p>
+    </div>
 
-  <p>More projects coming soon: Payment Fraud · Growth Dashboard · Churn Modeling</p>
+    <div class="project">
+      <h2><a href="#">Project 2: Fraud / Anomaly Detection (Coming Soon)</a></h2>
+      <p>Detecting suspicious patterns across deposit and withdrawal channels using rule-based + ML detection.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="#">Project 3: Growth Funnel Dashboard (Coming Soon)</a></h2>
+      <p>SQL + Looker dashboard to track user acquisition, activation, and retention across product channels.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Pelumi Okunola · Built with HTML & GitHub Pages
+  </footer>
 </body>
 </html>
