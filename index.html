@@ -63,6 +63,11 @@
     section.active {
       display: block;
     }
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
     .project {
       background-color: #fff;
       border-radius: 12px;
@@ -75,12 +80,15 @@
       transform: translateY(-4px);
     }
     .project h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 0.5rem;
     }
     .project a {
       color: #8e44ad;
       text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
     }
     .project p {
       font-size: 0.95rem;
@@ -89,13 +97,17 @@
       display: flex;
       align-items: flex-start;
       gap: 2rem;
+      flex-wrap: wrap;
     }
     .about-container img {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       border-radius: 100px;
       object-fit: cover;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .about-container p, .about-container ul {
+      margin-bottom: 1.5rem;
     }
     .contact-box {
       background-color: #fff;
@@ -143,83 +155,64 @@
   </nav>
 
   <section id="about" class="tab-section">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="./images/pelumi-profile.jpg" alt="Pelumi Okunola">
-    <div>
-      <div class="bio-block" style="margin-bottom: 2rem;">
-        <p>Hi, I'm Pelumi Okunola — a data & business analyst with 6+ years of experience working in fintech, payments, and operations. I currently lead the Fiat Team at Quidax, where I oversee ₦10B+ in weekly transaction volumes across three core fiat products.</p>
-      </div>
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="./images/pelumi-profile.jpg" alt="Pelumi Okunola">
+      <div>
+        <p><strong>👋 Hi, I’m Pelumi Okunola</strong><br>
+        Data & Product Analyst | Fintech Innovator | ₦12B+ Weekly Ops | SQL • Python • Looker</p>
 
-      <div class="bio-block" style="margin-bottom: 2rem;">
-        <p>I started my career in banking, transitioned into crypto during the Nigerian ban, and helped Quidax build its peer-to-peer fiat infrastructure from scratch. I’ve since grown the team to 7 people and built operational systems that are both resilient and scalable.</p>
-      </div>
+        <hr>
 
-      <div class="bio-block" style="margin-bottom: 2rem;">
-        <p>As someone obsessed with clarity, my tools of choice are SQL, Python, Excel, and Looker Studio. I’ve used them to identify fraud patterns, reduce drop-offs in user funnels, build dashboards executives actually use, and lead projects like our expansion into Ghana.</p>
-      </div>
+        <p>I turn complex fintech operations into actionable, data-driven strategy. With 5+ years at Quidax, I lead the Fiat Operations team, managing $8m+ in weekly transaction volume, driving insights, and shipping product improvements across liquidity, fraud, and provider systems.</p>
 
-      <div class="bio-block" style="margin-bottom: 2rem;">
-        <p>I’m currently studying for an MSc in Artificial Intelligence & Data Science at the University of Hull to deepen my statistical and machine learning skills. My next step? A career that blends data, operations, and strategy — ideally in a place that moves fast and thinks smart.</p>
-      </div>
+        <hr>
 
-      <div class="bio-block" style="margin-bottom: 2rem;">
-        <p>Outside work, I’m a forex trader, reader, and someone committed to spiritual and personal growth. I’m focused on maintaining consistency across all areas of life, and learning something new every week — just to stay curious and whole.</p>
-      </div>
+        <p><strong>🚀 What I Do</strong></p>
+        <ul>
+          <li><strong>Funnel & User Behavior Analysis:</strong> Analyze conversion drop-offs and lifecycle trends using SQL, Python, and Looker, contributing to 18+ product decisions and a 40% post-KYC retention boost.</li>
+          <li><strong>Operational Dashboards & Automation:</strong> Built systems to track liquidity, fraud, and agent reliability—improving fraud detection by 25% and reducing failed deposits by 40%.</li>
+          <li><strong>Team & Product Leadership:</strong> Lead a team of 8. Authored 6+ PRDs. Cut manual ops by 35% through automation and better tooling.</li>
+        </ul>
 
-      <div class="bio-block">
-        <p><strong>Skills:</strong> SQL · Python · Tableau · Looker Studio · Excel · Operational Strategy · Funnel Analysis · Risk & Fraud Analytics</p>
+        <hr>
+
+        <p><strong>📚 Currently</strong><br>
+        I’m pursuing an MSc in Artificial Intelligence & Data Science in the United Kingdom, focused on statistical methods, machine learning, and how AI can drive real-time fraud detection and scalable product growth in fintech.</p>
+
+        <hr>
+
+        <p><strong>🎯 What Drives Me</strong><br>
+        I thrive at the intersection of data, product, and operations, delivering insights in 48 hours, supporting 5+ product improvements per quarter, and constantly learning.</p>
+
+        <hr>
+
+        <p>Outside of work, I trade the financial markets, enjoy reading, and stay committed to both spiritual and personal growth. I'm focused on building consistency across every area of my life, while learning something new each week to stay curious, grounded, and whole.</p>
       </div>
     </div>
-  </div>
-</section>
-
-      <section style="margin-bottom: 2rem;">
-        <p>I started my career in banking, transitioned into crypto during the Nigerian ban, and helped Quidax build its peer-to-peer fiat infrastructure from scratch. I’ve since grown the team to 7 people and built operational systems that are both resilient and scalable.</p>
-      </section>
-
-      <section style="margin-bottom: 2rem;">
-        <p>As someone obsessed with clarity, my tools of choice are SQL, Python, Excel, and Looker Studio. I’ve used them to identify fraud patterns, reduce drop-offs in user funnels, build dashboards executives actually use, and lead projects like our expansion into Ghana.</p>
-      </section>
-
-      <section style="margin-bottom: 2rem;">
-        <p>I’m currently studying for an MSc in Artificial Intelligence & Data Science at the University of Hull to deepen my statistical and machine learning skills. My next step? A career that blends data, operations, and strategy — ideally in a place that moves fast and thinks smart.</p>
-      </section>
-
-      <section style="margin-bottom: 2rem;">
-        <p>Outside work, I’m a forex trader, reader, and someone committed to spiritual and personal growth. I’m rebuilding consistency across all areas of life, and learning something new every week — just to stay curious and whole.</p>
-      </section>
-
-      <section>
-        <p><strong>Skills:</strong> SQL · Python · Tableau · Looker Studio · Excel · Operational Strategy · Funnel Analysis · Risk & Fraud Analytics</p>
-      </section>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section id="projects" class="tab-section active">
-  <div class="project">
-    <h2><a href="https://github.com/Qkpesko/data_projects/tree/main/funnel_dropoff_analysis" target="_blank">Project 1: Customer Funnel Drop-Off Analysis →</a></h2>
-    <p>Analyzed onboarding funnel for a digital finance app. Found a 37% drop after KYC, highlighted high-churn segments, and proposed retention nudges. Includes notebook and report.</p>
-  </div>
-
-  <div class="project">
-    <h2><a href="https://github.com/Qkpesko/data_projects/tree/main/fraud_detection" target="_blank">Project 2: Fraud / Anomaly Detection (Coming Soon) →</a></h2>
-    <p>Detecting suspicious patterns across deposit and withdrawal channels using rule-based + ML detection.</p>
-  </div>
-
-  <div class="project">
-    <h2><a href="https://github.com/Qkpesko/data_projects/tree/main/growth_dashboard" target="_blank">Project 3: Growth Funnel Dashboard (Coming Soon) →</a></h2>
-    <p>SQL + Looker dashboard to track user acquisition, activation, and retention across product channels.</p>
-  </div>
-</section>
+    <div class="project">
+      <h2><a href="https://github.com/Qkpesko/data_projects/tree/main/funnel_dropoff_analysis" target="_blank">Project 1: Customer Funnel Drop-Off Analysis →</a></h2>
+      <p>Analyzed onboarding funnel for a digital finance app. Found a 37% drop after KYC, highlighted high-churn segments, and proposed retention nudges. Includes notebook and report.</p>
+    </div>
+    <div class="project">
+      <h2><a href="#">Project 2: Fraud / Anomaly Detection (Coming Soon)</a></h2>
+      <p>Detecting suspicious patterns across deposit and withdrawal channels using rule-based + ML detection.</p>
+    </div>
+    <div class="project">
+      <h2><a href="#">Project 3: Growth Funnel Dashboard (Coming Soon)</a></h2>
+      <p>SQL + Looker dashboard to track user acquisition, activation, and retention across product channels.</p>
+    </div>
+  </section>
 
   <section id="contact" class="tab-section">
     <h2>Contact Me</h2>
     <div class="contact-box">
       <p><i class="fas fa-envelope contact-icon"></i>Email: <a href="mailto:pelumi.okunola7@gmail.com">pelumi.okunola7@gmail.com</a></p>
-      <p><i class="fab fa-linkedin contact-icon"></i>LinkedIn: <a href="https://www.linkedin.com/in/pelumi-o-8b6aa764/" target="_blank">LinkedIn</a></p>
-      <p><i class="fab fa-github contact-icon"></i>GitHub: <a href="https://github.com/Qkpesko" target="_blank">GitHub</a></p>
+      <p><i class="fab fa-linkedin contact-icon"></i>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p><i class="fab fa-github contact-icon"></i>GitHub: <a href="https://github.com/Qkpesko" target="_blank">github.com/Qkpesko</a></p>
     </div>
   </section>
 
@@ -241,6 +234,10 @@
         const section = document.getElementById(link.dataset.tab);
         section.classList.add('active');
       });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.tab-link.active')?.click();
     });
   </script>
 </body>
